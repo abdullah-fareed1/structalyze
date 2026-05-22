@@ -29,7 +29,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <img
               src="/src/assets/images/structalyze_logo.png"
               alt="Structalyze"
-              className="h-8 md:h-9 w-auto object-contain hover:opacity-90 transition-opacity"
+              className="h-10 md:h-9 w-auto object-contain hover:opacity-90 transition-opacity"
               referrerPolicy="no-referrer"
             />
           </button>

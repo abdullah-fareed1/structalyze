@@ -31,7 +31,7 @@ export default function ComingSoon({ viewMode, onNavigate }: ComingSoonProps) {
         {/* Brand visual header */}
         <div className="flex flex-col items-center gap-3">
           <img
-            src="/src/assets/images/structalyze_logo_1779458415793.png"
+            src="/src/assets/images/structalyze_logo.png"
             alt="Structalyze"
             className="h-9 sm:h-10 w-auto object-contain select-none"
             referrerPolicy="no-referrer"
