@@ -51,7 +51,7 @@ export default function Navbar({ currentRoute, onNavigate }: NavbarProps) {
           className="flex items-center cursor-pointer focus:outline-none text-left select-none"
         >
           <img
-            src="/src/assets/images/structalyze_logo_1779458415793.png"
+            src="/src/assets/images/structalyze_logo.png"
             alt="Structalyze"
             className="h-10 sm:h-11 md:h-12 w-auto object-contain hover:opacity-90 transition-opacity active:scale-[0.98]"
             referrerPolicy="no-referrer"

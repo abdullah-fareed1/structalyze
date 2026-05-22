@@ -27,7 +27,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             className="flex items-center justify-start cursor-pointer focus:outline-none select-none text-left"
           >
             <img
-              src="/src/assets/images/structalyze_logo_1779458415793.png"
+              src="/src/assets/images/structalyze_logo.png"
               alt="Structalyze"
               className="h-8 md:h-9 w-auto object-contain hover:opacity-90 transition-opacity"
               referrerPolicy="no-referrer"
