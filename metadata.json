@@ -1,0 +1,6 @@
+{
+  "name": "Structalyze",
+  "description": "Structalyze is an AI Meeting & CRM Memory Layer that processes sales conversations, extracts relationship variables, and synchronizes pipeline context to your CRM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
