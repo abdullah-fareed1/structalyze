@@ -16,6 +16,8 @@ import About from './pages/About';
 import ComingSoon from './pages/ComingSoon';
 import Contact from './pages/Contact';
 import Partner from './pages/Partner';
+import Privacy from './pages/Privacy';
+import TermsOfVision from './pages/TermsOfVision';
 
 export default function App() {
   const [route, setRoute] = useState<Page>('home');
@@ -24,7 +26,7 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '') as Page;
-      const validPages: Page[] = ['home', 'product', 'about', 'waitlist', 'contact', 'partner', 'signup', 'signin'];
+      const validPages: Page[] = ['home', 'product', 'about', 'waitlist', 'contact', 'partner', 'privacy', 'terms', 'signup', 'signin'];
       if (hash && validPages.includes(hash)) {
         setRoute(hash);
       } else if (!hash) {
@@ -60,6 +62,10 @@ export default function App() {
         return <ComingSoon viewMode="signin" onNavigate={handleNavigate} />;
       case 'signup':
         return <ComingSoon viewMode="signup" onNavigate={handleNavigate} />;
+      case 'privacy':
+        return <Privacy onNavigate={handleNavigate} />;
+      case 'terms':
+        return <TermsOfVision onNavigate={handleNavigate} />;
       case 'waitlist':
         return <ComingSoon viewMode="waitlist" onNavigate={handleNavigate} />;
       default:

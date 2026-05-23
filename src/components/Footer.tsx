@@ -1,6 +1,7 @@
 import React from 'react';
 import { Linkedin, ArrowUpRight } from 'lucide-react';
 import { Page } from '../types';
+import logo from '../assets/images/structalyze_logo.png';
 
 interface FooterProps {
   onNavigate: (route: Page) => void;
@@ -27,17 +28,18 @@ export default function Footer({ onNavigate }: FooterProps) {
             className="flex items-center justify-start cursor-pointer focus:outline-none select-none text-left"
           >
             <img
-              src="/src/assets/images/structalyze_logo.png"
+              src={logo}
               alt="Structalyze"
-              className="h-10 md:h-9 w-auto object-contain hover:opacity-90 transition-opacity"
+              className="h-[100px] w-auto object-contain hover:opacity-90 transition-opacity"
               referrerPolicy="no-referrer"
             />
           </button>
           <p className="text-xs text-neutral-400 leading-relaxed max-w-xs">
             The lightweight, intelligent AI meeting memory and context layer. Automatically capturing sales deal intelligence, updating CRMs, and ensuring context is never lost.
           </p>
+          
           <div className="flex items-center gap-3 mt-2 text-neutral-400">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1.5 text-xs font-mono" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/structalyze" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1.5 text-xs font-mono" aria-label="LinkedIn">
               <Linkedin className="w-3.5 h-3.5 text-blue-400" />
               <span>Connect on LinkedIn</span>
             </a>
@@ -143,9 +145,28 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="text-center md:text-left">
           &copy; {currentYear} Structalyze. All rights reserved.
         </div>
-        <div className="flex gap-6 justify-center">
-          <span className="hover:text-neutral-300 transition-colors">Privacy Charter</span>
-          <span className="hover:text-neutral-300 transition-colors">Terms of Vision</span>
+        <div className="flex gap-6 justify-center items-center flex-wrap">
+          <button
+            onClick={() => handleLinkClick('privacy')}
+            className="text-xs text-neutral-400 hover:text-white text-left transition-colors cursor-pointer"
+          >
+            Privacy Charter
+          </button>
+          <button
+            onClick={() => handleLinkClick('terms')}
+            className="text-xs text-neutral-400 hover:text-white text-left transition-colors cursor-pointer"
+          >
+            Terms of Vision
+          </button>
+          <a
+            href="https://www.linkedin.com/company/structalyze"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-xs text-neutral-400 hover:text-white transition-colors"
+          >
+            <ArrowUpRight className="w-3.5 h-3.5" />
+            LinkedIn
+          </a>
           <span className="hover:text-neutral-300 transition-colors bg-white/5 px-2 py-0.5 rounded text-white font-mono uppercase text-[9px]">
             Beta v0.1.0
           </span>

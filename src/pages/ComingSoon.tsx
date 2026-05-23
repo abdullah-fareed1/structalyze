@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Page } from '../types';
 import { Activity, ShieldAlert, Sparkles, Send, ArrowRight, ArrowLeft } from 'lucide-react';
 import WaitlistForm from '../components/WaitlistForm';
+import logo from '../assets/images/structalyze_logo.png';
 
 interface ComingSoonProps {
   viewMode: 'signup' | 'signin' | 'waitlist';
@@ -31,9 +32,9 @@ export default function ComingSoon({ viewMode, onNavigate }: ComingSoonProps) {
         {/* Brand visual header */}
         <div className="flex flex-col items-center gap-3">
           <img
-            src="/src/assets/images/structalyze_logo.png"
+            src={logo}
             alt="Structalyze"
-            className="h-9 sm:h-10 w-auto object-contain select-none"
+            className="h-[100px] w-auto object-contain select-none"
             referrerPolicy="no-referrer"
           />
           <span className="font-mono text-[9px] uppercase tracking-widest text-neutral-500 bg-neutral-900 border border-white/5 px-2 py-0.5 rounded">Control Deck</span>

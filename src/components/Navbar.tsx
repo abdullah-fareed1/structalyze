@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Sparkles, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Page } from '../types';
+import logo from '../assets/images/structalyze_logo.png';
 
 interface NavbarProps {
   currentRoute: Page;
@@ -51,9 +52,9 @@ export default function Navbar({ currentRoute, onNavigate }: NavbarProps) {
           className="flex items-center cursor-pointer focus:outline-none text-left select-none"
         >
           <img
-            src="/src/assets/images/structalyze_logo.png"
+            src={logo}
             alt="Structalyze"
-            className="h-10 sm:h-11 md:h-12 w-auto object-contain hover:opacity-90 transition-opacity active:scale-[0.98]"
+            className="h-[100px] w-auto object-contain hover:opacity-90 transition-opacity active:scale-[0.98]"
             referrerPolicy="no-referrer"
           />
         </button>

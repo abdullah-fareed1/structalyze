@@ -1,4 +1,4 @@
-export type Page = 'home' | 'product' | 'about' | 'waitlist' | 'contact' | 'partner' | 'signup' | 'signin';
+export type Page = 'home' | 'product' | 'about' | 'waitlist' | 'contact' | 'partner' | 'privacy' | 'terms' | 'signup' | 'signin';
 
 export interface WaitlistEntry {
   email: string;
